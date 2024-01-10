@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right,  var(--main-color), var(--secondary-color), whitesmoke);
+
+  color: #363436;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+:root{
+  --main-color:  #EDAFB8;
+  --secondary-color: #F7E1D7;
+  --third-color: #DEDBD2;
+  --lightgreen-color: #B0C4B1;
+  --darkgreen-color: #4A5759;
+
+}
+
+
+#root {
+  margin: 0 24px;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+
+
+
+
