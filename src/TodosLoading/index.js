@@ -1,5 +1,5 @@
-import React from 'react';
-import './TodosLoading.css';
+import React from 'react'
+import './TodosLoading.css'
 
 function TodosLoading() {
   return (
@@ -8,7 +8,7 @@ function TodosLoading() {
       <p className="LoadingTodo-text"></p>
       <span className="LoadingTodo-deleteIcon"></span>
     </div>
-  );
+  )
 }
 
-export { TodosLoading };
+export { TodosLoading }

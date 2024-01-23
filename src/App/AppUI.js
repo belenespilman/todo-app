@@ -1,15 +1,15 @@
-import React from "react";
-import { TodoCounter } from "../TodoCounter";
-import { TodoSearch } from "../TodoSearch";
-import { TodoList } from "../TodoList";
-import { TodoItem } from "../TodoItem";
-import { TodosLoading } from "../TodosLoading";
-import { TodosError } from "../TodosError";
-import { EmptyTodos } from "../EmptyTodos";
-import { CreateTodoButton } from "../CreateTodoButton";
-import { TodoContext } from "../TodoContext";
-import { Modal } from "../Modal";
-import { TodoForm } from "../TodoForm";
+import React from 'react'
+import { TodoCounter } from '../TodoCounter'
+import { TodoSearch } from '../TodoSearch'
+import { TodoList } from '../TodoList'
+import { TodoItem } from '../TodoItem'
+import { TodosLoading } from '../TodosLoading'
+import { TodosError } from '../TodosError'
+import { EmptyTodos } from '../EmptyTodos'
+import { CreateTodoButton } from '../CreateTodoButton'
+import { TodoContext } from '../TodoContext'
+import { Modal } from '../Modal'
+import { TodoForm } from '../TodoForm'
 
 function AppUI() {
   const {
@@ -20,7 +20,7 @@ function AppUI() {
     deleteTodo,
     openModal,
     setOpenModal,
-  } = React.useContext(TodoContext);
+  } = React.useContext(TodoContext)
 
   return (
     <>
@@ -57,7 +57,7 @@ function AppUI() {
         </Modal>
       )}
     </>
-  );
+  )
 }
 
-export { AppUI };
+export { AppUI }

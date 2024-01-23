@@ -1,5 +1,5 @@
-import React from 'react';
-import { TodoIcon } from './';
+import React from 'react'
+import { TodoIcon } from './'
 
 function CompleteIcon({ completed, onComplete }) {
   return (
@@ -8,7 +8,7 @@ function CompleteIcon({ completed, onComplete }) {
       color={completed ? 'green' : 'gray'}
       onClick={onComplete}
     />
-  );
+  )
 }
 
-export { CompleteIcon };
+export { CompleteIcon }
