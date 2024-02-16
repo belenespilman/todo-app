@@ -1,11 +1,22 @@
+.todo-search-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+
+
 .TodoSearch {
   background: transparent;
   border-radius: 32px;
   border: 2.5px solid var(--todo-item);
-  margin-bottom: 32px;
+  margin-bottom: 60px;
   height: 48px;
   padding: 0;
-  width: 98%;
+  width: 100%;
+  max-width: 500px;
   text-align: center;
   box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
 }

@@ -1,11 +1,13 @@
 .TodoCounter {
+  background: linear-gradient(var(--linear-gradient1), var(--linear-gradient2));;
   font-size: 24px;
   text-align: center;
   margin: 0;
   margin-bottom: 32px;
   padding: 48px;
-  font-weight: normal;
-  color: #605870;
+  font-weight: bold;
+  color: #FFFFFF;
+ 
 }
 
 .TodoCounter span {

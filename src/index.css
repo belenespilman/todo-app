@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: linear-gradient(to bottom right,  var(--linear-gradient1), var(--linear-gradient2)); */
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   color: #605870;
 }
@@ -20,7 +19,10 @@ body {
 
 
 #root {
-  margin: 0 24px;
+  background: linear-gradient(var(--main-div1), var(--main-div2));
+  background-size: cover;
+  background-position: center center;
+  margin: 0 0px;
   position: relative;
   min-height: 100vh;
 }
