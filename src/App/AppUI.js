@@ -25,6 +25,7 @@ function AppUI() {
   return (
     <>
       <TodoCounter />
+
       <TodoSearch />
 
       <TodoList>

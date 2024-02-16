@@ -14,10 +14,12 @@
 .Icon-container-check {
   position: absolute;
   left: 24px;
+  
+  
 }
 
 .Icon-container-check--active {
-  color: #4caf50;
+  color: #a6f2e8;
 }
 
 .Icon-container-delete {
@@ -29,14 +31,28 @@
   color: red;
 }
 
-.Icon-svg {
-  width: 24px;
-  height: 24px;
+/* .Icon-svg {
+  padding-right: 12px;
+} */
+
+.delete-icon {
+  padding-right: 12px;
+  height: 70%;
+  width: 6%;
+}
+
+.check-icon {
+ padding-left: 12px;
+ padding-right: 6px;
+ height: 70%;
+ width: 7%;
+
+ 
 }
 
 .Icon-container-check:hover .Icon-svg {
-  fill: green;
+  fill: #a6f2e8;
 }
 .Icon-container-delete:hover .Icon-svg {
-  fill: red;
+  fill: rgb(225, 66, 66);
 }

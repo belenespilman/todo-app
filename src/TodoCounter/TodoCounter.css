@@ -2,8 +2,10 @@
   font-size: 24px;
   text-align: center;
   margin: 0;
+  margin-bottom: 32px;
   padding: 48px;
   font-weight: normal;
+  color: #605870;
 }
 
 .TodoCounter span {
