@@ -1,9 +1,11 @@
 .TodoCounter {
-  background: linear-gradient(var(--linear-gradient1), var(--linear-gradient2));;
+  background: linear-gradient(var(--linear-gradient1), 70%, var(--linear-gradient2));;
   font-size: 24px;
   text-align: center;
+  align-items: center;
+  justify-content: end;
   margin: 0;
-  margin-bottom: 32px;
+  height: 50px;
   padding: 48px;
   font-weight: bold;
   color: #FFFFFF;

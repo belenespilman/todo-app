@@ -1,9 +1,20 @@
+.todo-search-main-container{
+  background: linear-gradient(to top var(--main-div1), var(--main-div2));
+  border-radius: 32px;
+}
+
+
+
+
 .todo-search-container{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 24px;
   margin-left: 24px;
+  margin-top: 24px;
+  height: 100px;
+  border-radius: 32px;
 }
 
 
@@ -12,7 +23,6 @@
   background: transparent;
   border-radius: 32px;
   border: 2.5px solid var(--todo-item);
-  margin-bottom: 60px;
   height: 48px;
   padding: 0;
   width: 100%;

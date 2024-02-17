@@ -8,17 +8,15 @@
   border-radius: 18px;
   width: 100%;
   max-width: 500px;
-
-
 }
 
 .TodoItem-p {
   margin: 24px 0 24px 24px;
   padding-left: 30px;
   width: calc(100% - 120px);
-  font-size: larger;
+  font-size: x-large;
   line-height: 28px;
-  font-weight: 500;
+  font-weight: medium;
   color: #FFFFFF;
   
 }
