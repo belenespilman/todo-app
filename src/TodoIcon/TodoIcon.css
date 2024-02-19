@@ -24,7 +24,6 @@
 
 .Icon-container-delete {
   position: absolute;
-  top: -24px;
   right: 0;
 }
 .Icon-container-delete:hover {
@@ -38,7 +37,11 @@
 .delete-icon {
   padding-right: 12px;
   height: 42px;
-  width: 32px
+  width: 32px;
+  margin-right: 12px;
+  padding-left: 20px;
+  padding-bottom: 70px
+  
 }
 
 .check-icon {
