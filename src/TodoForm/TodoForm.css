@@ -22,29 +22,33 @@ label {
 
 textarea {
     background-color: #ffffff;
-    border: .5px, gray;
+    border-color:gray;
+    border-width: 2px;
     border-radius: 12px;
-    box-shadow: 0px 5px rgba(128, 128, 128, 0.25);
     color: #605870;
     font-size: 20px;
     text-align: center;
     padding: 12px;
     height: 60px;
     width: calc(100% - 25px);
+    outline-color: #605870;
 
 }
 
 textarea ::placeholder {
   text-align: center;
-  color: gray;
   font-family: "Montserrat";
   font-weight: 200;
+ 
 
 }
 
 textarea :focus {
-    outline-color: #605870;
-    outline-width: .5px;
+    /* border-color: #605870;
+    outline-color: none;
+    outline-width: .5px; */
+    outline: none;
+    
 
 }
 
