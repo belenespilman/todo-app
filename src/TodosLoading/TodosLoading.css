@@ -3,21 +3,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 24px;
+  margin-left: 24px;
   margin-top: 24px;
+  height: 50px;
   box-shadow: 0px 5px 50px rgba(108, 99, 126, 0.2);
-  border-radius: 10px;
-  padding: 12px 0;
+  border-radius: 24px;
+  padding: 12px 0;  
+  width: 328px;
 }
 
 .LoadingTodo-text {
-  margin: 24px 0 24px 24px;
-  width: calc(100% - 120px);
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
+  position: relative;
+  display: flex;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-top: 24px;
+  height: 28px;
+  width: 320px;
+  border-radius: 32px;
+ 
 }
 
-.LoadingTodo-completeIcon,
+
+/* .LoadingTodo-completeIcon,
 .LoadingTodo-deleteIcon {
   cursor: pointer;
   display: flex;
@@ -35,15 +44,15 @@
   position: absolute;
   top: -24px;
   right: 0;
-}
+} */
 
 
 .LoadingTodo-container,
 .LoadingTodo-completeIcon,
 .LoadingTodo-deleteIcon {
-  background: linear-gradient(90deg, rgba(250,250,250,1), rgb(200, 199, 199));
+  background: linear-gradient(20deg, rgb(200, 199, 199, .7), rgba(96,88,112, .5));
   background-size: 400% 400%;
-  animation: loadingAnimation 3s ease-in-out infinite;
+  animation: 4s ease-in-out infinite;
 }
 
 @keyframes loadingAnimation {
