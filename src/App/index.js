@@ -57,11 +57,11 @@ function App() {
         ))}
       </TodoList>
 
-      <CreateTodoButton />
+      <CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />
 
       {openModal && (
         <Modal>
-          <TodoForm />
+          <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
         </Modal>
       )}
     </>
