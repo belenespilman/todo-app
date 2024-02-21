@@ -7,10 +7,12 @@ function ChangeAlert({ show, toggleShow }) {
     return (
       <React.Fragment>
         <div className="update-container">
-          <p className="update-alert">Your TODO list is outdated</p>
-          <button className="reload-button" onClick={() => toggleShow(false)}>
-            Refresh
-          </button>
+          <div className="update-modal">
+            <p className="update-alert">Your TODO list is outdated</p>
+            <button className="reload-button" onClick={() => toggleShow(false)}>
+              Refresh
+            </button>
+          </div>
         </div>
       </React.Fragment>
     )
