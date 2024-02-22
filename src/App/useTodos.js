@@ -38,6 +38,14 @@ function useTodos() {
     saveTodos(newTodos)
   }
 
+  const reopenTodo = (text) => {
+    console.log('REOPPEN')
+    const newTodos = [...todos]
+    const todoIndex = newTodos.findIndex((todo) => todo.text === text)
+    newTodos[todoIndex].completed = false
+    saveTodos(newTodos)
+  }
+
   const deleteTodo = (text) => {
     const newTodos = [...todos]
     const todoIndex = newTodos.findIndex((todo) => todo.text === text)
@@ -54,6 +62,7 @@ function useTodos() {
     setSearchValue,
     searchedTodos,
     completeTodo,
+    reopenTodo,
     deleteTodo,
     addTodo,
     openModal,

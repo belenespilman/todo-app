@@ -20,6 +20,7 @@ function App() {
     error,
     searchedTodos,
     completeTodo,
+    reopenTodo,
     deleteTodo,
     openModal,
     setOpenModal,
@@ -64,6 +65,7 @@ function App() {
               text={todo.text}
               completed={todo.completed}
               onComplete={() => completeTodo(todo.text)}
+              onReopen={() => reopenTodo(todo.text)}
               onDelete={() => deleteTodo(todo.text)}
             />
           )}
