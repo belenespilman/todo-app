@@ -19,7 +19,7 @@ body {
 
 
 #root {
-  background: linear-gradient(var(--main-div1), var(--main-div2));
+  background: url("/src/assets/background.png");
   background-size: cover;
   background-position: center center;
   margin: 0 0px;
@@ -27,7 +27,13 @@ body {
   min-height: 100vh;
 }
 
-
+.main-content-wrapper{
+  padding-top: 20px;
+  background-color: #f6f3f9;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  height: calc(100vh - 166px);
+ }
 
 
 

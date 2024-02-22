@@ -14,9 +14,11 @@
 
 
 .update-modal{
+    background-color: rgba(108, 99, 126, .9);
+    border-radius:12px;
     position: fixed;
     width: 30%;
-    height: 100px;
+    height: 142px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,14 +29,18 @@
 }
 
 .update-alert{
-    color: #392f4e;
-    font-weight: bolder;
+    /* background-color: #ECE6F3; */
+    border-radius: 8px;
+    color: #ECE6F3;
+    font-weight: bold;
     font-size: larger;
     font-family: 'Montserrat';
     position: absolute;
-    margin-left: 0;
-    margin-top: 0;
-    padding-top: 0;
+    margin-left: 14px;
+    margin-top: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
     margin-bottom: 70px;
     padding-bottom: 12px;
 

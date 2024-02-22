@@ -3,15 +3,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-top: 24px;
-  height: 50px;
+  margin-top: 26px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 500px;
+  left: 482px;
   box-shadow: 0px 5px 50px rgba(108, 99, 126, 0.2);
-  border-radius: 24px;
-  padding: 12px 0;  
-  width: 328px;
 }
+
+
 
 .LoadingTodo-text {
   position: relative;
@@ -47,13 +47,12 @@
 } */
 
 
-.LoadingTodo-container,
-.LoadingTodo-completeIcon,
-.LoadingTodo-deleteIcon {
+.LoadingTodo-container
+ {
   background: linear-gradient(20deg, rgb(200, 199, 199, .7), rgba(96,88,112, .5));
   background-size: 400% 400%;
   animation: 4s ease-in-out infinite;
-}
+} 
 
 @keyframes loadingAnimation {
   0% {

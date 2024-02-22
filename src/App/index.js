@@ -39,42 +39,44 @@ function App() {
           totalTodos={totalTodos}
           // loading={loading}
         />
+      </TodoHeader>
+
+      <div className="main-content-wrapper">
         <TodoSearch
           searchValue={searchValue}
           setSearchValue={setSearchValue}
           // loading={loading}
         />
-      </TodoHeader>
+        <TodoList
+          error={error}
+          loading={loading}
+          searchedTodos={searchedTodos}
+          searchValue={searchValue}
+          totalTodos={totalTodos}
+          onError={() => <TodosError />}
+          onLoading={() => <TodosLoading />}
+          onEmptyTodos={() => <EmptyTodos />}
+          onEmptySearchResults={() => <EmptySearchResults />}
+        >
+          {(todo) => (
+            <TodoItem
+              key={todo.text}
+              text={todo.text}
+              completed={todo.completed}
+              onComplete={() => completeTodo(todo.text)}
+              onDelete={() => deleteTodo(todo.text)}
+            />
+          )}
+        </TodoList>
 
-      <TodoList
-        error={error}
-        loading={loading}
-        searchedTodos={searchedTodos}
-        searchValue={searchValue}
-        totalTodos={totalTodos}
-        onError={() => <TodosError />}
-        onLoading={() => <TodosLoading />}
-        onEmptyTodos={() => <EmptyTodos />}
-        onEmptySearchResults={() => <EmptySearchResults />}
-      >
-        {(todo) => (
-          <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
-          />
+        <CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />
+
+        {openModal && (
+          <Modal>
+            <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
+          </Modal>
         )}
-      </TodoList>
-
-      <CreateTodoButton openModal={openModal} setOpenModal={setOpenModal} />
-
-      {openModal && (
-        <Modal>
-          <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
-        </Modal>
-      )}
+      </div>
 
       <ChangeAlertWithStorageListener sync={syncTodos} />
     </>

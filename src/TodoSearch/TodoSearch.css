@@ -1,5 +1,5 @@
 .todo-search-main-container{
-  background: linear-gradient(to top var(--main-div1), var(--main-div2));
+  background: transparent;
   border-radius: 32px;
 }
 

@@ -1,16 +1,17 @@
 import './CreateTodoButton.css'
 import React from 'react'
+import PlusIcon from '../assets/plusicon.png'
 
 function CreateTodoButton({ setOpenModal, openModal }) {
   return (
-    <button
+    <img
+      src={PlusIcon}
+      alt=""
       className="CreateTodoButton"
       onClick={() => {
         setOpenModal((state) => !state)
       }}
-    >
-      +
-    </button>
+    />
   )
 }
 
