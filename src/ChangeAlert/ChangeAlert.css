@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
     position: fixed;
     top:0;
     bottom: 0;
@@ -29,14 +30,14 @@
 }
 
 .update-alert{
-    /* background-color: #ECE6F3; */
+    text-align: center;
     border-radius: 8px;
     color: #ECE6F3;
     font-weight: bold;
     font-size: larger;
     font-family: 'Montserrat';
     position: absolute;
-    margin-left: 14px;
+    margin-left: 4px;
     margin-top: 4px;
     padding-left: 12px;
     padding-right: 12px;
@@ -62,4 +63,17 @@
     padding-top:0;
     border: none;
     font-family: "Montserrat";
+}
+
+@media (max-width: 700px) {
+    .update-modal {
+        width: 60%;
+        height: 150px;     
+}
+    .reload-button{
+        margin-top: 60px
+    }
+
+
+
 }
