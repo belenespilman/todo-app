@@ -6,7 +6,7 @@ function TodoSearch({ searchValue, setSearchValue, loading }) {
     <div className="todo-search-main-container">
       <div className="todo-search-container">
         <input
-          placeholder="Search your tasks"
+          placeholder="🔍 Search your tasks"
           className="TodoSearch"
           value={searchValue}
           disabled={loading}

@@ -1,17 +1,24 @@
-.LoadingTodo-container {
+.LoadingTodo-wrapper{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 26px;
-  border-radius: 18px;
   width: 100%;
+}
+
+.LoadingTodo-container {
   max-width: 500px;
-  left: 482px;
+  width: 100%;
+  border-radius: 18px;
   box-shadow: 0px 5px 50px rgba(108, 99, 126, 0.2);
 }
 
-
+@media screen and (max-width: 420px) {
+  .LoadingTodo-container{
+    max-width: 350px;
+  }
+}
 
 .LoadingTodo-text {
   position: relative;
