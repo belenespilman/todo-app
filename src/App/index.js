@@ -58,7 +58,7 @@ function App() {
           onError={() => <TodosError />}
           onLoading={() => <TodosLoading />}
           onEmptyTodos={() => <EmptyTodos />}
-          onEmptySearchResults={() => <EmptySearchResults />}
+          onEmptySearchResults={(value) => <EmptySearchResults value={value} />}
         >
           {(todo) => (
             <TodoItem
