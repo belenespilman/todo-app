@@ -68,6 +68,7 @@ function useTodos() {
     openModal,
     setOpenModal,
     syncTodos,
+    todos,
   }
 }
 

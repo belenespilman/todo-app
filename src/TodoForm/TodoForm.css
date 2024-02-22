@@ -84,9 +84,6 @@ textarea :focus {
     font-weight: 600;
     align-items: center;
     justify-content: center;
-
-
-   
 }
 
 .TodoForm-button--cancel{
@@ -95,4 +92,12 @@ textarea :focus {
     justify-content: center;
     font-size: x-large;
     font-weight: 200;
+}
+
+.duplicated-error-message{
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    color: rgb(254, 72, 72);
 }

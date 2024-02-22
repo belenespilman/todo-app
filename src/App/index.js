@@ -30,6 +30,7 @@ function App() {
     setSearchValue,
     addTodo,
     syncTodos,
+    todos,
   } = useTodos()
 
   return (
@@ -75,7 +76,11 @@ function App() {
 
         {openModal && (
           <Modal>
-            <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
+            <TodoForm
+              addTodo={addTodo}
+              setOpenModal={setOpenModal}
+              todos={todos}
+            />
           </Modal>
         )}
       </div>
