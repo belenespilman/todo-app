@@ -3,9 +3,6 @@
   border-radius: 32px;
 }
 
-
-
-
 .todo-search-container{
   display: flex;
   align-items: center;
@@ -17,10 +14,11 @@
   border-radius: 32px;
 }
 
-
-
 .TodoSearch {
   background: transparent;
+  font-weight: light;
+  font-family: 'Montserrat';
+  font-size:large;
   border-radius: 32px;
   border: 2.5px solid var(--todo-item);
   height: 48px;
@@ -33,9 +31,6 @@
 
 .TodoSearch::placeholder {
   color: gray;
-  font-family: 'Montserrat';
-  font-weight: light;
-  font-size:large;
 }
 
 .TodoSearch:focus {
